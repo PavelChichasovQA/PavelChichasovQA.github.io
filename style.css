@@ -1,0 +1,315 @@
+/* Общие стили */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-block; /* Чтобы можно было задавать margin */
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+/* Шапка */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100; /* Чтобы шапка была поверх всего */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo a {
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #007bff;
+    text-decoration: none;
+}
+
+/* Секция Hero */
+#hero {
+    background-color: #e9ecef;
+    padding: 80px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.hero-image {
+    flex: 1;
+    padding: 20px;
+}
+
+.hero-image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Секция "Обо мне" */
+#about {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.about-content img {
+    max-width: 300px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.about-content p {
+    text-align: left;
+}
+
+/* Секция "Навыки" */
+#skills {
+    background-color: #e9ecef;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Адаптивный грид */
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.skill {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.progress-bar {
+    background-color: #ddd;
+    height: 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+    overflow: hidden; /* Чтобы контент не вылезал */
+}
+
+.progress {
+    background-color: #007bff;
+    height: 100%;
+    color: #fff;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 10px;
+    transition: width 0.5s ease; /* Анимация заполнения */
+}
+
+/* Секция "Опыт работы" */
+#experience {
+    padding: 40px 20px;
+}
+
+.experience-item {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.experience-item h3 {
+    margin-bottom: 5px;
+}
+
+.experience-item .date {
+    color: #777;
+    font-style: italic;
+}
+
+.experience-item ul {
+    padding-left: 20px;
+}
+
+/* Секция "Портфолио" */
+#portfolio {
+    background-color: #e9ecef;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.portfolio-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-item img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Секция "Контакты" */
+#contact {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box; /* Чтобы padding не увеличивал ширину */
+}
+
+.contact-info {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+}
+
+/* Подвал */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        margin-top: 10px;
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    #hero {
+        flex-direction: column;
+    }
+
+    .hero-content,
+    .hero-image {
+        flex: none;
+        width: 100%;
+    }
+
+    .about-content {
+        flex-direction: column;
+    }
+
+    .about-content img {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+/* Дополнительные стили (анимация при прокрутке) */
+.fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.fade-in.active {
+    opacity: 1;
+}
+
+/* Дополнительные стили (иконки) */
+.fas, .fab {
+    margin-right: 5px;
+}

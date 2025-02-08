@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Иван Петров - Тестировщик</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="#">ИП</a>
+            </div>
+            <ul>
+                <li><a href="#about">Обо мне</a></li>
+                <li><a href="#skills">Навыки</a></li>
+                <li><a href="#experience">Опыт</a></li>
+                <li><a href="#portfolio">Портфолио</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Иван Петров</h1>
+            <p>Тестировщик ПО с опытом 3 года</p>
+            <a href="#contact" class="button">Связаться</a>
+        </div>
+        <div class="hero-image">
+            <img src="" alt="Фотография Ивана Петрова">
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>Обо мне</h2>
+        <div class="about-content">
+            <img src="" alt="Фотография Ивана Петрова">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Навыки</h2>
+        <div class="skills-container">
+            <div class="skill">
+                <h3>Ручное тестирование</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 90%;">90%</div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3>Автоматизация тестирования (Selenium)</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 75%;">75%</div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3>API тестирование (Postman)</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 85%;">85%</div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3>Написание тест-кейсов</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 95%;">95%</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2>Опыт работы</h2>
+        <div class="experience-item">
+            <h3>Компания "Пример 1"</h3>
+            <p class="date">2021 - Настоящее время</p>
+            <p>Должность: Тестировщик ПО</p>
+            <ul>
+                <li>Разработка и выполнение тест-кейсов.</li>
+                <li>Регистрация и отслеживание дефектов.</li>
+                <li>Участие в автоматизации тестирования.</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <h3>Компания "Пример 2"</h3>
+            <p class="date">2020 - 2021</p>
+            <p>Должность: Младший тестировщик</p>
+            <ul>
+                <li>Выполнение ручного тестирования.</li>
+                <li>Подготовка тестовой документации.</li>
+                <li>Взаимодействие с разработчиками.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <h2>Портфолио</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <img src="" alt="Проект 1">
+                <h3>Название проекта 1</h3>
+                <p>Краткое описание проекта.</p>
+                <a href="#" target="_blank">Подробнее</a>
+            </div>
+            <div class="portfolio-item">
+                <img src="" alt="Проект 2">
+                <h3>Название проекта 2</h3>
+                <p>Краткое описание проекта.</p>
+                <a href="#" target="_blank">Подробнее</a>
+            </div>
+             <div class="portfolio-item">
+                <img src="" alt="Проект 3">
+                <h3>Название проекта 3</h3>
+                <p>Краткое описание проекта.</p>
+                <a href="#" target="_blank">Подробнее</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Контакты</h2>
+        <div class="contact-form">
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Имя:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Сообщение:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="button">Отправить</button>
+            </form>
+        </div>
+
+        <div class="contact-info">
+            <h3>Контактная информация</h3>
+            <p><i class="fas fa-envelope"></i> email@example.com</p>
+            <p><i class="fas fa-phone"></i> +7 (999) 123-45-67</p>
+            <p><i class="fab fa-linkedin"></i> <a href="#">LinkedIn</a></p>
+            <p><i class="fab fa-github"></i> <a href="#">GitHub</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Иван Петров</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
